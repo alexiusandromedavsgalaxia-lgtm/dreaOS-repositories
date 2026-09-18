@@ -1,0 +1,15 @@
+_ANIMATION-A(
+  ARDINSTRUCTION(708_250000098_0001990097109000000)
+  ARDINSTRUCTION(709_260000099_0002000098110000000)
+  -jetpack_service(
+     import jetpackdrawer FROM *sys
+     @^jetpackD^3.2.9
+  )
+  -animation(
+  if detect == "line"-&"import LineUpAnimation" execute(
+  drawLine_draw(
+  --start(left)
+  --animation(curvedDraw)
+  --finish(onfinishline)
+  )
+  )
